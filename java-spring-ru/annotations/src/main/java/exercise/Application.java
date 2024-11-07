@@ -12,9 +12,8 @@ public class Application {
         for (Method method : Address.class.getDeclaredMethods()) {
 
             if (method.isAnnotationPresent(Inspect.class)) {
-
                 var methodName = method.getName();
-                var returnType = method.getReturnType();
+                var returnType = method.getReturnType().getSimpleName();
 
                 System.out.println("Method " + methodName + " returns a value of type " + returnType);
             }
