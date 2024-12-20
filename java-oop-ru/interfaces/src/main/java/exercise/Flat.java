@@ -2,9 +2,9 @@ package exercise;
 
 // BEGIN
 public class Flat implements Home {
-     double area;
-     double balconyArea;
-     int floor;
+    double area;
+    double balconyArea;
+    int floor;
 
     Flat(double area, double balconyArea, int floor) {
         this.area = area;
