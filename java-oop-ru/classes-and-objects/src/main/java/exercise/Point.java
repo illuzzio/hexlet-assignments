@@ -2,20 +2,20 @@ package exercise;
 
 // BEGIN
 public class Point {
-    private Integer X;
-    private Integer Y;
+    private Integer x;
+    private Integer y;
 
-    public Point(Integer X, Integer Y) {
-        this.X = X;
-        this.Y = Y;
+    public Point(Integer x, Integer y) {
+        this.x = x;
+        this.y = y;
     }
 
     public Integer getX() {
-        return X;
+        return x;
     }
 
     public Integer getY() {
-        return Y;
+        return y;
     }
 }
 // END
