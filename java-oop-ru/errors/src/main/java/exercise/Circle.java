@@ -1,10 +1,9 @@
 package exercise;
 
-import static java.lang.Math.PI;
-import static java.lang.Math.round;
-
 // BEGIN
 public class Circle {
+    public final double PI = 3.1415;
+
     private Point point;
     private int radius;
 
@@ -21,12 +20,12 @@ public class Circle {
         return radius;
     }
 
-    public int getSquare() throws NegativeRadiusException {
+    public double getSquare() throws NegativeRadiusException {
         if (radius < 0) {
             throw new NegativeRadiusException("Radius < 0");
         }
 
-        return (int) round(PI * radius * radius);
+        return Math.PI * Math.pow(radius, 2);
     }
 }
 // END
