@@ -28,7 +28,8 @@ public class Validator {
         return emptyFields;
     }
 
-    public static Map<String, List<String>> advancedValidate(Object object) {
+    public static Map<String, List<String>> advancedValidate(Object object)
+            throws IllegalArgumentException, IllegalAccessException {
         Map<String, List<String>> invalidFields = new HashMap<>();
         var fields = object.getClass().getDeclaredFields();
 

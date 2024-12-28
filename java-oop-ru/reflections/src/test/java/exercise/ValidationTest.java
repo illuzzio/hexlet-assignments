@@ -32,7 +32,9 @@ class ValidationTest {
     void testAdvancedValidate() throws IllegalAccessException {
         Address address1 = new Address("Rus", "Msk", null, "12", "2");
         Map<String, List<String>> result1 = Validator.advancedValidate(address1);
-        Map<String, List<String>> expected1 = Map.of("country", List.of("length less than 4"), "street", List.of("can not be null"));
+        List<String> list1 = List.of("length less than 4");
+        List<String> list2 = List.of("can not be null");
+        Map<String, List<String>> expected1 = Map.of("country", list1, "street", list2);
         assertThat(result1).isEqualTo(expected1);
 
         Address address2 = new Address("Russian", "Msk", "Len", "12", "2");
