@@ -58,7 +58,7 @@ public class Application {
             post.setId(data.getId());
             post.setTitle(data.getTitle());
             post.setBody(data.getBody());
-            return ResponseEntity.ok().build();
+            return ResponseEntity.ok(post);
         } else {
             return ResponseEntity.noContent().build();
         }
