@@ -48,7 +48,6 @@ public class ProductsController {
         var existingProduct = productRepository.findById(id)
                 .orElseThrow(() -> new ResourceNotFoundException("Product with id " + id + " not found"));
 
-        existingProduct.setId(product.getId());
         existingProduct.setPrice(product.getPrice());
         existingProduct.setTitle(product.getTitle());
 
