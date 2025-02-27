@@ -1,0 +1,11 @@
+# BEGIN
+spring:
+  datasource:
+    url: jdbc:h2:file:./test  # Используем H2 с сохранением данных в файл ./test
+    username: admin          # Имя пользователя
+    password: admin          # Пароль
+  jpa:
+    hibernate:
+      ddl-auto: update        # Обновляем схему, сохраняя данные между запусками
+    show-sql: true           # Показываем SQL-запросы в логах для отладки
+# END

@@ -1,0 +1,11 @@
+# BEGIN
+spring:
+  datasource:
+    url: jdbc:h2:mem:test  # Используем H2 в памяти для профиля development
+    username: sa          # Имя пользователя
+    password: 123         # Пароль
+  jpa:
+    hibernate:
+      ddl-auto: create-drop  # Создаем и удаляем схему при каждом запуске
+    show-sql: true          # Показываем SQL-запросы в логах для отладки
+# END
